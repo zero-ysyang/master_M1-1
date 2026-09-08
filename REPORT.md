@@ -6,7 +6,8 @@
 계절성을 분석한 프로젝트입니다.
 
 ## 📁 프로젝트 구조
-project/
+```
+project
 ├── README.md # 실행 방법 (이 파일)
 ├── REPORT.md # 분석 리포트
 ├── requirements.txt # 의존성 목록
@@ -15,14 +16,14 @@ project/
 ├── ma_trend.png
 ├── daily_return.png
 └── monthly_pattern.png
-
+```
 
 
 ## ⚙️ 설치 방법
 ```bash
 # 1. 라이브러리 설치
 pip install -r requirements.txt
-
+```
 
 ## Jupyter 노트북 실행
 jupyter notebook analysis.ipynb
@@ -78,7 +79,8 @@ yfinance는 비공식 라이브러리로, 상업적 사용 시 Yahoo의
 ## 3. 분석 결과
 
 ### 3-1. 추세 분석 (이동평균선)
-![추세](images/ma_trend.png)
+<img width="1400" height="600" alt="ma_trend" src="https://github.com/user-attachments/assets/56d63349-8c26-48ea-bf5c-eb40f4b79996" />
+
 
 - **방법**: 20일·60일 이동평균선
 - **결과**: 2024년 8월까지 우상향 → 이후 하락 전환
@@ -87,7 +89,8 @@ yfinance는 비공식 라이브러리로, 상업적 사용 시 Yahoo의
   (데드크로스 발생 추정)
 
 ### 3-2. 급등락 분석 (일간 수익률)
-![수익률](images/daily_return.png)
+<img width="1400" height="500" alt="daily_return" src="https://github.com/user-attachments/assets/e39220d7-518e-4ebc-9b7a-209d2825985f" />
+
 
 > 📌 집계 단위: **일별** — 하루 단위 급변동을 포착하기 위함
 
@@ -105,7 +108,8 @@ yfinance는 비공식 라이브러리로, 상업적 사용 시 Yahoo의
 
 
 ### 3-3. 월별 패턴 분석 (계절성)
-![월별](images/monthly_pattern.png)
+<img width="1200" height="500" alt="monthly_pattern" src="https://github.com/user-attachments/assets/c665f22f-a8e8-4fab-b2e5-198e09de7166" />
+
 
 > 📌 집계 단위: **월별 평균** — 반복되는 계절 패턴을 보기 위함
 
